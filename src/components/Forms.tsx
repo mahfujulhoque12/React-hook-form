@@ -112,6 +112,7 @@ const Forms = () => {
           onClick={() => {
             trigger("lastName");
           }}
+          className="bg-red-300 px-3 py-2"
         >
           Trigger
         </button>
@@ -120,6 +121,7 @@ const Forms = () => {
           onClick={() => {
             trigger(["firstName", "lastName"]);
           }}
+             className="bg-red-300 px-3 py-2 mx-2"
         >
           Trigger Multiple
         </button>
@@ -128,6 +130,7 @@ const Forms = () => {
           onClick={() => {
             trigger();
           }}
+             className="bg-red-300 px-3 py-2"
         >
           Trigger All
         </button>
@@ -144,7 +147,7 @@ const Forms = () => {
                 {...register(`test.${index}.lastName`)}
               />
               <button
-                className="px-4 py-2 roundd-md bg-amber-400 text-white"
+                className="px-4 py-2 roundd-md bg-amber-400 text-white mt-4"
                 type="button"
                 onClick={() => removeTest(index)}
               >
